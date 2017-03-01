@@ -19,14 +19,10 @@ function draw() {
 	background(0);
 	for (var i = 0; i < allCircles.length; i += 1){
 		paint(allCircles[i]);
-		move(allCircles[i]);
   }
 }
 function paint(circle) {
 	colorMode(HSB);
 	fill(circle.h, 100, 100); 
 	ellipse(circle.x, circle.y, circle.r, circle.r); 
-}
-function move(circle) {
-	circle.y += random(-1,1)
 }
